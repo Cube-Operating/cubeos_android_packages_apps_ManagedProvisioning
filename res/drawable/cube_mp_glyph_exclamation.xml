@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CubeOS: exclamation glyph (white, for use inside a rounded tile). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,2.5c1.1,0 1.95,0.93 1.86,2.03l-0.86,10.3c-0.04,0.52 -0.48,0.92 -1,0.92s-0.96,-0.4 -1,-0.92l-0.86,-10.3c-0.09,-1.1 0.76,-2.03 1.86,-2.03zM12,17.6c1.05,0 1.9,0.85 1.9,1.9s-0.85,1.9 -1.9,1.9 -1.9,-0.85 -1.9,-1.9 0.85,-1.9 1.9,-1.9z" />
+</vector>

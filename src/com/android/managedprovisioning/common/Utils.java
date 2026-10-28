@@ -846,6 +846,7 @@ public class Utils {
             .setTheme(com.google.android.setupdesign.R.style.SudGlifButton_Primary)
             .build();
         mixin.setPrimaryButton(primaryButton);
+        CubeFooterStyler.apply(layout);
         return primaryButton;
     }
 
@@ -869,6 +870,7 @@ public class Utils {
                 .setTheme(com.google.android.setupdesign.R.style.SudGlifButton_Secondary)
                 .build();
         mixin.setSecondaryButton(secondaryButton);
+        CubeFooterStyler.apply(layout);
         return secondaryButton;
     }
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CubeOS: plain (borderless) accent text button; only a soft rounded press highlight. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/cube_mp_pressed">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+            <corners android:radius="@dimen/cube_mp_button_radius" />
+        </shape>
+    </item>
+</ripple>

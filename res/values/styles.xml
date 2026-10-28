@@ -80,11 +80,11 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <!-- CubeOS: iOS type (17sp body, system sans) -->
     <style name="Provisioning2Theme.Text.Primary">
-        <item name="android:fontFamily">@string/sudFontSecondary</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <!--notice: line height 20sp (textSize + leading)-->
-        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/cube_mp_label</item>
+        <item name="android:textSize">17sp</item>
         <item name="android:lineSpacingExtra">4sp</item>
     </style>
 
@@ -116,16 +116,17 @@
     </style>
 
     <style name="Provisioning2Theme.Text.Primary.Medium" parent="Provisioning2Theme.Text.Primary">
-        <!--notice: line height 24sp (textSize + leading)-->
-        <item name="android:textSize">16sp</item>
-        <item name="android:lineSpacingExtra">8sp</item>
-        <item name="android:letterSpacing">0.02</item>
+        <!-- CubeOS: iOS secondary body copy -->
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/cube_mp_secondary_label</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:letterSpacing">0</item>
     </style>
 
     <style name="Provisioning2Theme.Text.Primary.Large" parent="Provisioning2Theme.Text.Primary">
-        <!--notice: line height 24sp (textSize + leading)-->
-        <item name="android:textSize">20sp</item>
-        <item name="android:lineSpacingExtra">4sp</item>
+        <!-- CubeOS: iOS row title (17sp) -->
+        <item name="android:textSize">17sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
         <item name="android:letterSpacing">0</item>
     </style>
 

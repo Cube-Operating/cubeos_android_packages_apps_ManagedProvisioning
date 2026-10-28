@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CubeOS: full-width rounded (14dp) accent primary button. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/cube_mp_pressed">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cube_mp_primary_button_bg" />
+            <corners android:radius="@dimen/cube_mp_button_radius" />
+        </shape>
+    </item>
+</ripple>

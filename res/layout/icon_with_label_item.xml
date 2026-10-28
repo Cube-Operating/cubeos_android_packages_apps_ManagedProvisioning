@@ -20,7 +20,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/provisioning_progress_container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/cube_mp_card"
+    android:padding="@dimen/cube_mp_card_padding">
     <FrameLayout
         android:id="@+id/sud_items_icon_container"
         android:layout_alignTop="@+id/sud_items_title"
@@ -31,8 +33,9 @@
         <ImageView
             android:id="@+id/sud_items_icon"
             android:layout_gravity="center_vertical"
-            android:layout_width="@dimen/sud_items_icon_size"
-            android:layout_height="@dimen/sud_items_icon_size"
+            android:layout_width="@dimen/cube_mp_list_icon_size"
+            android:layout_height="@dimen/cube_mp_list_icon_size"
+            android:tint="@color/cube_mp_accent"
             android:scaleType="centerInside" />
     </FrameLayout>
     <TextView
@@ -41,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="start"
-        style="@style/Provisioning2Theme.Text.Primary.Medium"
+        style="@style/CubeListItemTitle"
         android:textDirection="locale" />
     <TextView
         android:id="@+id/sud_items_summary"
@@ -51,6 +54,6 @@
         android:gravity="start"
         android:layout_marginStart="@dimen/sud_items_summary_margin_start"
         android:layout_marginTop="@dimen/sud_items_summary_margin_top"
-        style="@style/Provisioning2Theme.Text.Primary.Small"
+        style="@style/CubeListItemSummary"
         android:textDirection="locale" />
 </RelativeLayout>

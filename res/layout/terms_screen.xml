@@ -20,6 +20,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cube_mp_bg"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
@@ -27,12 +28,14 @@
         android:title="@string/terms"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/cube_mp_bg"
         android:theme="?actionBarTheme"/>
 
     <TextView
         android:id="@+id/header"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        style="@style/CubeLargeTitle"
         android:paddingTop="@dimen/terms_screen_header_margin_top"
         android:paddingBottom="@dimen/spacer_16"
         android:paddingStart="?attr/sudMarginStart"
@@ -42,6 +45,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/terms_container"
         android:divider="@null"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/spacer_24"
         android:layout_marginStart="?attr/sudMarginStart"
         android:layout_marginEnd="?attr/sudMarginEnd"
         style="@style/Provisioning2Theme.TermsList"/>

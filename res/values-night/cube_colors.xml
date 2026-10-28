@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CubeOS: iOS system palette for the device-management setup screens (dark). -->
+<resources>
+    <color name="cube_mp_bg">#000000</color>
+    <color name="cube_mp_surface">#1C1C1E</color>
+    <color name="cube_mp_accent">#0A84FF</color>
+    <color name="cube_mp_accent_disabled">#590A84FF</color>
+    <color name="cube_mp_label">#FFFFFF</color>
+    <color name="cube_mp_secondary_label">#99EBEBF5</color>
+    <color name="cube_mp_tertiary_label">#4DEBEBF5</color>
+    <color name="cube_mp_separator">#A6545458</color>
+    <color name="cube_mp_pressed">#1FFFFFFF</color>
+    <color name="cube_mp_red">#FF453A</color>
+    <color name="cube_mp_on_accent">#FFFFFF</color>
+    <color name="cube_mp_on_accent_disabled">#99FFFFFF</color>
+    <bool name="cube_mp_light_bars">false</bool>
+</resources>

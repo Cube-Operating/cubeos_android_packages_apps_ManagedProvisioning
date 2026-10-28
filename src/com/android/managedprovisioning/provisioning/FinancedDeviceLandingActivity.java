@@ -29,6 +29,7 @@ import android.widget.TextView;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.managedprovisioning.R;
 import com.android.managedprovisioning.common.AccessibilityContextMenuMaker;
+import com.android.managedprovisioning.common.CubeFooterStyler;
 import com.android.managedprovisioning.common.SettingsFacade;
 import com.android.managedprovisioning.common.SetupGlifLayoutActivity;
 import com.android.managedprovisioning.common.StylerHelper;
@@ -114,6 +115,7 @@ public final class FinancedDeviceLandingActivity extends SetupGlifLayoutActivity
                         .setButtonType(FooterButton.ButtonType.NEXT)
                         .setTheme(com.google.android.setupdesign.R.style.SudGlifButton_Primary)
                         .build());
+        CubeFooterStyler.apply(layout);
     }
 
     private void setupItem(ViewGroup item, @StringRes int title, String summary,

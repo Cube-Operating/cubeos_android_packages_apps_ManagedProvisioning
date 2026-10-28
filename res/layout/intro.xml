@@ -22,24 +22,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- CubeOS: no Material illustration on the consent screen; the header shows a simple
+         glyph tile instead. The animation view stays (gone) because the consent helper
+         still loads it by id. -->
     <LinearLayout
         style="@style/SudContentFrame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <com.google.android.setupdesign.view.FillContentLayout
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:maxWidth="@dimen/animation_max_size"
-            android:maxHeight="@dimen/animation_max_size">
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/animation"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:lottie_loop="true"
-                app:lottie_autoPlay="true"
-                android:importantForAccessibility="no"
-                android:scaleType="fitCenter" />
-        </com.google.android.setupdesign.view.FillContentLayout>
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="false"
+            android:importantForAccessibility="no" />
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>

@@ -87,6 +87,8 @@ public abstract class SetupLayoutActivity extends Hilt_SetupLayoutActivity {
                 mThemeHelper.setupDynamicColors(this);
             }
         }
+        // CubeOS: iOS setup look (palette, centred header, rounded buttons). Appearance only.
+        getTheme().applyStyle(R.style.CubeProvisioningOverlay, /* force= */ true);
 
         super.onCreate(savedInstanceState);
 

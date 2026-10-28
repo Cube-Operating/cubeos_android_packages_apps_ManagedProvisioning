@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  CubeOS: iOS setup-style look for the device-management (work profile / fully managed)
+  setup screens. Applied on top of whatever Glif theme ThemeHelper resolves (see
+  SetupLayoutActivity), so it only changes appearance, never flow or policy behaviour.
+-->
+<resources>
+
+    <style name="CubeProvisioningOverlay">
+        <!-- iOS system palette -->
+        <item name="android:windowBackground">@color/cube_mp_bg</item>
+        <item name="android:colorBackground">@color/cube_mp_bg</item>
+        <item name="android:statusBarColor">@color/cube_mp_bg</item>
+        <item name="android:navigationBarColor">@color/cube_mp_bg</item>
+        <item name="android:navigationBarDividerColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">@bool/cube_mp_light_bars</item>
+        <item name="android:windowLightNavigationBar">@bool/cube_mp_light_bars</item>
+        <item name="sudBackgroundBaseColor">@color/cube_mp_bg</item>
+        <item name="android:colorAccent">@color/cube_mp_accent</item>
+        <item name="colorAccent">@color/cube_mp_accent</item>
+        <item name="android:colorPrimary">@color/cube_mp_accent</item>
+        <item name="colorPrimary">@color/cube_mp_accent</item>
+        <item name="android:colorControlActivated">@color/cube_mp_accent</item>
+        <item name="colorControlActivated">@color/cube_mp_accent</item>
+        <item name="android:textColorLink">@color/cube_mp_accent</item>
+        <item name="android:indeterminateTint">@color/cube_mp_accent</item>
+        <item name="android:textColorPrimary">@color/cube_mp_label</item>
+        <item name="android:textColorSecondary">@color/cube_mp_secondary_label</item>
+        <item name="sudEditBoxColor">@color/cube_mp_accent</item>
+
+        <!-- Centred iOS-style header: glyph tile, large bold title, 17sp body -->
+        <item name="sudGlifHeaderGravity">center_horizontal</item>
+        <item name="sudGlifIconGravity">center_horizontal</item>
+        <item name="sudGlifSubtitleGravity">center_horizontal</item>
+        <item name="sudGlifIconSize">@dimen/cube_mp_tile_size</item>
+        <item name="sucGlifIconMarginTop">@dimen/cube_mp_icon_margin_top</item>
+        <item name="sucGlifHeaderMarginTop">@dimen/cube_mp_title_margin_top</item>
+        <item name="sucGlifHeaderMarginBottom">@dimen/cube_mp_title_margin_bottom</item>
+        <item name="sudGlifDescriptionMarginTop">@dimen/cube_mp_description_margin_top</item>
+        <item name="sudGlifDescriptionMarginBottom">@dimen/cube_mp_description_margin_bottom</item>
+        <item name="sudGlifHeaderTitleStyle">@style/CubeGlifHeaderTitle</item>
+        <item name="sudGlifDescriptionStyle">@style/CubeGlifDescription</item>
+        <item name="sudMarginStart">@dimen/cube_mp_margin</item>
+        <item name="sudMarginEnd">@dimen/cube_mp_margin</item>
+
+        <!-- Footer: roomy, rounded 14dp buttons, no caps -->
+        <item name="sudButtonAllCaps">false</item>
+        <item name="sudButtonCornerRadius">@dimen/cube_mp_button_radius</item>
+        <item name="sudButtonTertiaryGravity">center_horizontal</item>
+        <item name="sucFooterBarPaddingStart">@dimen/cube_mp_margin</item>
+        <item name="sucFooterBarPaddingEnd">@dimen/cube_mp_margin</item>
+        <item name="sucFooterBarPaddingVertical">@dimen/cube_mp_footer_padding_vertical</item>
+        <item name="sucFooterBarPaddingBottom">@dimen/cube_mp_footer_padding_bottom</item>
+        <item name="sucFooterBarButtonMinHeight">@dimen/cube_mp_button_height</item>
+        <item name="sucFooterBarButtonMiddleSpacing">@dimen/cube_mp_button_gap</item>
+    </style>
+
+    <style name="CubeGlifHeaderTitle" parent="SudGlifHeaderTitleMaterialYou">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/cube_mp_title_size</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/cube_mp_label</item>
+        <item name="android:hyphenationFrequency">normal</item>
+        <item name="android:breakStrategy">balanced</item>
+    </style>
+
+    <style name="CubeGlifDescription" parent="SudGlifDescriptionMaterialYou">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/cube_mp_body_size</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/cube_mp_secondary_label</item>
+        <item name="android:textColorLink">@color/cube_mp_accent</item>
+    </style>
+
+    <!-- Grouped inset section rows (education items, financed-device items) -->
+    <style name="CubeListItemTitle">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/cube_mp_body_size</item>
+        <item name="android:textColor">@color/cube_mp_label</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="CubeListItemSummary">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/cube_mp_footnote_size</item>
+        <item name="android:textColor">@color/cube_mp_secondary_label</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <!-- Terms screen large title (iOS large-title, leading) -->
+    <style name="CubeLargeTitle">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/cube_mp_large_title_size</item>
+        <item name="android:textColor">@color/cube_mp_label</item>
+    </style>
+</resources>

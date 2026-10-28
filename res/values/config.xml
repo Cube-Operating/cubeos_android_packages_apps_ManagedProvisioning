@@ -17,12 +17,13 @@
 <resources>
     <!-- Provisioning screens -->
     <dimen name="sud_items_icon_size">20dp</dimen>
-    <dimen name="sud_items_summary_margin_start">36dp</dimen>
-    <dimen name="sud_items_summary_margin_top">2dp</dimen>
-    <dimen name="sud_items_margin_top">32dp</dimen>
-    <dimen name="sud_items_margin_inbetween">24dp</dimen>
-    <dimen name="terms_disclaimer_header_vertical_margin">16dp</dimen>
-    <dimen name="terms_disclaimer_content_margin_top">16dp</dimen>
-    <dimen name="terms_disclaimer_content_margin_bottom">24dp</dimen>
+    <!-- CubeOS: grouped inset rows (icon 24dp + 16dp gap = summary aligned with title) -->
+    <dimen name="sud_items_summary_margin_start">40dp</dimen>
+    <dimen name="sud_items_summary_margin_top">4dp</dimen>
+    <dimen name="sud_items_margin_top">24dp</dimen>
+    <dimen name="sud_items_margin_inbetween">@dimen/cube_mp_card_gap</dimen>
+    <dimen name="terms_disclaimer_header_vertical_margin">14dp</dimen>
+    <dimen name="terms_disclaimer_content_margin_top">2dp</dimen>
+    <dimen name="terms_disclaimer_content_margin_bottom">16dp</dimen>
     <bool name="show_progress_label_on_left_side">false</bool>
 </resources>
